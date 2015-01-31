@@ -23,7 +23,10 @@ public class TestGuessNumber {
 
     @Test
     public void testZeroAZeroB(){
-
+        String input = "1234";
+        String guess = "5678";
+        GuessNumber guessNumber = new GuessNumber();
+        assertThat(guessNumber.getTips(input, guess)).isEqualTo("0A0B");
     }
 
     @Test
