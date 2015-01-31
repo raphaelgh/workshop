@@ -31,6 +31,9 @@ public class TestGuessNumber {
 
     @Test
     public void testOneAThreeB(){
-
+        String input = "1234";
+        String guess = "4213";
+        GuessNumber guessNumber = new GuessNumber();
+        assertThat(guessNumber.getTips(input, guess)).isEqualTo("1A3B");
     }
 }
